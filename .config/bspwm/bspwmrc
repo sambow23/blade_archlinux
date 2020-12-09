@@ -20,6 +20,8 @@ bspc config removal_adjustment   none
 
 bspc rule -a qutebrowser desktop='^2'
 bspc rule -a Wine state=floating
+bspc rule -a gnome-screenshot state=floating
+bspc rule -a Screenshot state=floating
 
 start-pulseaudio-x11
 sxhkd &
@@ -32,7 +34,7 @@ xrdb ~/.Xresources
 
 wal -R
 #wal -i '/home/sambow23/Pictures/sanfran.jpg'
-feh --bg-fill '/home/sambow23/Documents/hl.png'
+feh --bg-fill '/home/sambow23/Documents/nice.jpeg'
 
 # Pulse Audio controls
 #XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5% #increase sound volume
@@ -46,7 +48,7 @@ nm-applet &
 #xfce4-panel &
 picom &
 /usr/lib/xfce4/notifyd/xfce4-notifyd
-blueman-manager &
+blueman-tray &
 
 #/home/sambow23/comptray/comptray &
 #compton --backend glx --paint-on-overlay --vsync opengl-swc

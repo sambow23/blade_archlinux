@@ -48,6 +48,22 @@ super + shift + o
 # state/flags
 #
 
+#PLAY
+XF86AudioPlay
+    playerctl play-pause
+
+#Next
+XF86AudioNext
+    playerctl next
+
+#previous
+XF86AudioPrev
+    playerctl previous
+
+#Stop
+XF86AudioStop
+    playerctl stop
+
 # set the window state
 super + shift + space
 	bspc node -t "~{tiled,floating}"
